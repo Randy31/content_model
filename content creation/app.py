@@ -13,7 +13,7 @@ def main():
     prompt = st.text_input('Enter your prompt:')
     points = st.number_input('value:')
     if st.button('Generate Content'):
-        generated_content = generate_content(f'Create product description for {prompt.lower()} in {points} points without heading')
+        generated_content = generate_content(prompt)
         st.subheader('Generated Content:')
         st.write(generated_content)
      
