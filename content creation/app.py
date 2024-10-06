@@ -2,7 +2,7 @@ import google.generativeai as genai
 import streamlit as st
 
 # Assuming you have already set your Google Cloud project and API key
-GOOGLE_API_KEY = 'AIzaSyBnJO5aXDtnHWuKITpULxKWGBcLDp0PN-A'  # Replace with your actual API key
+GOOGLE_API_KEY = 'API Key'  # Replace with your actual API key
 
 # Configure the library with your API key
 genai.configure(api_key=GOOGLE_API_KEY)
