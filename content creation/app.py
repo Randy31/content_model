@@ -2,7 +2,7 @@ import google.generativeai as genai
 import streamlit as st
 
 # Assuming you have already set your Google Cloud project and API key
-GOOGLE_API_KEY = 'your api key'  # Replace with your actual API key
+GOOGLE_API_KEY = 'AIzaSyBnJO5aXDtnHWuKITpULxKWGBcLDp0PN-A'  # Replace with your actual API key
 
 # Configure the library with your API key
 genai.configure(api_key=GOOGLE_API_KEY)
@@ -13,7 +13,7 @@ def main():
     prompt = st.text_input('Enter your prompt:')
     points = st.number_input('value:')
     if st.button('Generate Content'):
-        generated_content = generate_content(prompt)
+        generated_content = generate_content(f"Write a compelling and detailed product description for'{prompt}'")
         st.subheader('Generated Content:')
         st.write(generated_content)
      
